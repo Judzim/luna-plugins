@@ -55,12 +55,18 @@ div[class*="_bar_"] {
 }
 
 /* All playlists segment */
-[class^="_sectionHeader_"] {
+[class^="_sectionHeader_ca54638"] {
     position: sticky !important;
     background-color: var(--blur-background) !important;
     backdrop-filter: blur(var(--blur-radius)) !important;
     border-radius: 9px !important;
     padding-top: 7px !important;
+}
+
+/* Feed subheadings */
+[class="_sectionHeader_cdc6234"] {
+    background: transparent !important;
+
 }
 
 
@@ -189,7 +195,7 @@ table:last-child,
 }
 
 /* Remove the color */
-[class*="_container_"][class*="_solidHeader_"]::before {
+[class*="_container_711d272"]::before {
     display: none !important;
 }
 
