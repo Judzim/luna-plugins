@@ -244,6 +244,14 @@ table:last-child,
     background-image: none !important;
 }
 
+[class="_background_a548b6d"] {
+    top: 100px !important; 
+}
+
+[class="_backgroundBlur_7bd6dbd"] {
+    height: 100px !important;
+}
+
 #mainHeader::before {
     content: "";
     position: absolute;
