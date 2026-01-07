@@ -296,6 +296,10 @@ table:last-child,
     background-color: var(--blur-background) !important;
 }
 
+/* Remove header backgrounds of albums */
+[class*="_dataContainer_66f4f40"]:before {
+    background-image: none !important;
+}
 
 [class^="_smallHeader_"]:before,
 [class*="_smallHeader_"]:before {
