@@ -297,14 +297,6 @@ table:last-child,
 }
 
 
-/* Header backgrounds - remove images */
-[class^="_dataContainer_"]:before,
-[class*="_dataContainer_"]:before {
-    --img: none;
-    background-image: none !important;
-}
-
-
 [class^="_smallHeader_"]:before,
 [class*="_smallHeader_"]:before {
     --img: none;
@@ -340,26 +332,27 @@ table:last-child,
 
 /* Hide mainHeader when scrolling */
 body:has([class*="_showHeader_"]) #mainHeader::before {
-  opacity: 0 !important;
-  transition: opacity 0.2s ease !important;
+    opacity: 0 !important;
+    transition: opacity 0.2s ease !important;
 }
 
 /* Expand small header UPWARD only */
 [class*="_smallHeader_"] {
-  transition: transform 0.2s ease, padding 0.2s ease !important;
+    transition: transform 0.2s ease, padding 0.2s ease !important;
 }
 
 body:has([class*="_showHeader_"]) [class*="_smallHeader_"] {
-  padding-top: 120px !important;
-  margin-top: -20px !important;
+    padding-top: 120px !important;
+    margin-top: -20px !important;
+    background-color: transparent;
 }
 
 /* Extend the background upward - keep natural width */
 [class*="_smallHeader_"]::before {
-  transition: all 0.2s ease !important;
+    transition: all 0.2s ease !important;
 }
 
 body:has([class*="_showHeader_"]) [class*="_smallHeader_"]::before {
-  top: -20px !important;
-  height: 250px !important;
+    top: -20px !important;
+    height: 250px !important;
 }
