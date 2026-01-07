@@ -147,6 +147,10 @@ table:last-child,
 }
 
 /* Duplicate */
+[class*="ReactModal__Overlay"]{
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
 [class*="ReactModal__Content"] {
     background-color: var(--blur-background) !important;
     backdrop-filter: blur(var(--blur-radius)) !important;
@@ -157,11 +161,16 @@ table:last-child,
 }
 
 /* Collection pop-up blur */
-[class^="_submenu_"] {
+[class*="_submenu_"] {
     backdrop-filter: blur(var(--blur-radius)) !important;
     background-color: var(--blur-background) !important;
 }
 
+/* Pop-ups notifications blur */
+[class^="_notification_99c9c6e"] {
+    background-color: transparent !important;
+    backdrop-filter: blur(var(--blur-radius)) !important;
+}
 
 /* Better readability of text in sidebar */
 [class*="_navigationItem_"],
