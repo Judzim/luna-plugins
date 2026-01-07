@@ -146,6 +146,15 @@ table:last-child,
     background-color: rgba(0,0,0,0) !important;
 }
 
+/* Duplicate */
+[class*="ReactModal__Content"] {
+    background-color: var(--blur-background) !important;
+    backdrop-filter: blur(var(--blur-radius)) !important;
+}
+
+[class*="_modalBody_33fe980"] {
+    border-top: 24px solid transparent;
+}
 
 /* Collection pop-up blur */
 [class^="_submenu_"] {
